@@ -101,7 +101,7 @@ contract Lottery {
         require(stage == Stage.Reg, "Failed to set stage to Reg");
     }
     
-    function _getPlayerIndex(address _addr) private view returns(uint) {
+    function _getPlayerIndex(address _addr) private view returns(uint ) {
         for(uint i=0; i<numPlayers; i++) {
             if(players[i].addr == _addr) {
                 return i;
